@@ -1,1 +1,1 @@
-# Integrated-Deep-Learning-Approach-for-Bottelneck-Detection-in-IoT-Devices
+# Integrated_Deep_Learning_Approach_for_Bottelneck_Detection_in_IoT_Devices
