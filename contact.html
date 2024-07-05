@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottleneck Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <img src="{{ url_for('static', filename='logo.png') }}" class="logo" alt="Logo">
+             <div class="nav-links">
+
+                <i class="fas fa-times"></i>
+                <ul>
+                    <li><a href="{{ url_for('Home') }}">Home</a></li>
+                    <li><a href="{{ url_for('aboutus') }}">About</a></li>
+                    <li><a href="{{ url_for('prediction') }}">Prediction</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+
+                </ul>
+            </div>
+            
+        </nav>
+
+        <h1> Contact Us</h1>
+    </section>
+   <!-------content us  -------->
+   <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15162.587788427923!2d74.5935759991211!3d18.180170699173463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707562763610!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+
+   <section class="contact-us">
+
+         <div class="row">
+            <div class="contact-col">
+                <div>
+                <i class ="fa fa-home"></i>
+                <span>
+                    <h5>XYZ Road,ABC Building </h5>
+                    <p> Baramati,Maharashtra,India </p>
+                </span>
+                </div>
+                <div>
+                    <i class ="fa fa-phone"></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to saturday ,10AM to 6PM </p>
+                    </span>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>                        <span>
+                            <h5>bottleneckdetection@gmail.com</h5>
+                            <p>Gmail us your query</p>
+                        </span>
+                        </div>
+
+            </div>
+            <div class="contact-col">
+                <form action ="formhandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name"required>
+                    <input type="gmail"name="gmail" placeholder="Enter Gmail Name"required>
+                    <input type="text"name="subject" placeholder="Enter Your Query"required>
+                    <textarea rows="8"name="message" placeholder="Message" required > </textarea>
+                    <button type="Submit" class="hero-btn red-btn">Send Message </button>
+                </form>
+
+
+
+
+            </div>
+
+         </div>
+
+   </section>
+    
+    
+    <!--------footer------->
+    <section class = "footer">
+        <h4>About Us </h4> 
+        <p>At Bottleneck Detection, we are driven by a passion for innovation and excellence in the field of IoT solutions.<br> Our dedicated team of experts is committed to providing cutting-edge technologies and personalized services to meet the unique needs of our clients.</p>
+        <div class="icons">  
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        
+    </section>
+
+</body>
+</body>
+</html>

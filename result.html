@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+
+</head>
+<body class="result-page">
+    <header class="header">
+        <nav>
+            <img src="{{ url_for('static', filename='logo.png') }}" class="logo" alt="Logo">
+             <div class="nav-links">
+              <ul>
+                    <li><a href="{{ url_for('Home') }}">Home</a></li>
+                    <li><a href="{{ url_for('aboutus') }}">About</a></li>
+                    <li><a href="{{ url_for('prediction') }}">Prediction</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Prediction Result</h1>
+            <p>The predicted class for the uploaded file is: <strong>{{ predicted_class }}</strong></p>
+            <a href="{{ url_for('prediction') }}" class="hero-btn">Upload Another File</a>
+        </div>
+    </header>
+</body>
+</html>

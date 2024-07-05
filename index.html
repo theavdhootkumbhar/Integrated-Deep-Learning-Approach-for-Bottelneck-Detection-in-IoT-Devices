@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottleneck Attack Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+</head>
+<body class="index-page">
+    <header class="header">
+        <nav>
+            <img src="{{ url_for('static', filename='logo.png') }}" class="logo" alt="Logo">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="{{ url_for('Home') }}">Home</a></li>
+                    <li><a href="{{ url_for('aboutus') }}">About</a></li>
+                    <li><a href="{{ url_for('prediction') }}">Prediction</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Bottleneck Attack Detection</h1>
+            <p>Upload your CSV file to detect potential attacks.</p>
+            <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" class="file-input" required>
+                <input type="submit" value="Upload" class="hero-btn">
+            </form>
+        </div>
+    </header>
+</body>
+</html>
